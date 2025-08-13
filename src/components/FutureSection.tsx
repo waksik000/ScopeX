@@ -22,16 +22,6 @@ export const FutureSection: React.FC = () => {
       title: t('future.mobile'),
       color: 'text-neon-cyan'
     },
-    {
-      icon: Brain,
-      title: t('future.ai'),
-      color: 'text-neon-pink'
-    },
-    {
-      icon: Package,
-      title: t('future.launcher'),
-      color: 'text-success'
-    }
   ];
 
   return (

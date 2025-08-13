@@ -6,6 +6,8 @@ import { GameSections } from '@/components/GameSection';
 import { VideoSection } from '@/components/VideoSection';
 import { NewsSection } from '@/components/NewsSection';
 import { FutureSection } from '@/components/FutureSection';
+import { FAQ } from '@/components/FAQ';
+import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -18,7 +20,9 @@ const Index = () => {
         <VideoSection />
         <NewsSection />
         <FutureSection />
+        <FAQ />
       </main>
+      <Footer />
     </div>
   );
 };

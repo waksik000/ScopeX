@@ -113,6 +113,33 @@ const translations = {
     // Theme
     'theme.light': 'Светлая тема',
     'theme.dark': 'Тёмная тема',
+    
+    // FAQ
+    'faq.title': 'Часто задаваемые вопросы',
+    'faq.q1': 'Безопасен ли ScopeX для использования?',
+    'faq.a1': 'Да, ScopeX использует передовые технологии защиты от обнаружения. Наш чит обходит VAC, EAC, BattlEye и Vanguard благодаря постоянным обновлениям.',
+    'faq.q2': 'Какие системные требования?',
+    'faq.a2': 'Windows 10/11 (64-bit), минимум 4 GB RAM, DirectX 11. Поддержка процессоров Intel и AMD.',
+    'faq.q3': 'Как часто выходят обновления?',
+    'faq.a3': 'Мы выпускаем обновления еженедельно или при необходимости (патчи игр, новые защиты). Все обновления бесплатные.',
+    'faq.q4': 'Могу ли я использовать ScopeX на нескольких аккаунтах?',
+    'faq.a4': 'Да, но мы рекомендуем использовать разные настройки для каждого аккаунта и соблюдать осторожность.',
+    'faq.q5': 'Что делать если чит не запускается?',
+    'faq.a5': 'Отключите антивирус, запустите от имени администратора, проверьте целостность файлов игры. Если проблема остается - обратитесь в поддержку.',
+    'faq.q6': 'Есть ли техническая поддержка?',
+    'faq.a6': 'Да, у нас есть активное сообщество в Discord и служба поддержки, которая поможет решить любые вопросы.',
+    
+    // Footer
+    'footer.description': 'Лучший бесплатный мультиплатформенный чит для популярных игр. Не детектируется, легкий и быстрый.',
+    'footer.quickLinks': 'Быстрые ссылки',
+    'footer.games': 'Игры',
+    'footer.news': 'Новости',
+    'footer.faq': 'FAQ',
+    'footer.download': 'Скачать',
+    'footer.version': 'Версия 2.1 • Windows • 15.2 MB',
+    'footer.rights': 'Все права защищены.',
+    'footer.madeWith': 'Сделано с',
+    'footer.forGamers': 'для геймеров',
   },
   en: {
     // Header
@@ -216,6 +243,33 @@ const translations = {
     // Theme
     'theme.light': 'Light Theme',
     'theme.dark': 'Dark Theme',
+    
+    // FAQ
+    'faq.title': 'Frequently Asked Questions',
+    'faq.q1': 'Is ScopeX safe to use?',
+    'faq.a1': 'Yes, ScopeX uses advanced anti-detection technologies. Our cheat bypasses VAC, EAC, BattlEye and Vanguard thanks to constant updates.',
+    'faq.q2': 'What are the system requirements?',
+    'faq.a2': 'Windows 10/11 (64-bit), minimum 4 GB RAM, DirectX 11. Supports Intel and AMD processors.',
+    'faq.q3': 'How often are updates released?',
+    'faq.a3': 'We release updates weekly or as needed (game patches, new protections). All updates are free.',
+    'faq.q4': 'Can I use ScopeX on multiple accounts?',
+    'faq.a4': 'Yes, but we recommend using different settings for each account and being cautious.',
+    'faq.q5': 'What to do if the cheat doesn\'t start?',
+    'faq.a5': 'Disable antivirus, run as administrator, verify game file integrity. If the problem persists - contact support.',
+    'faq.q6': 'Is there technical support?',
+    'faq.a6': 'Yes, we have an active Discord community and support service that will help solve any issues.',
+    
+    // Footer
+    'footer.description': 'The best free multiplatform cheat for popular games. Undetected, lightweight and fast.',
+    'footer.quickLinks': 'Quick Links',
+    'footer.games': 'Games',
+    'footer.news': 'News',
+    'footer.faq': 'FAQ',
+    'footer.download': 'Download',
+    'footer.version': 'Version 2.1 • Windows • 15.2 MB',
+    'footer.rights': 'All rights reserved.',
+    'footer.madeWith': 'Made with',
+    'footer.forGamers': 'for gamers',
   }
 };
 
