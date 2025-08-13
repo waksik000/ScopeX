@@ -1,10 +1,12 @@
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Play } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export const VideoSection: React.FC = () => {
   const { t } = useLanguage();
+
+  // Замени на свой YouTube video ID
+  const youtubeVideoId = "dQw4w9WgXcQ"; // Пример ID
 
   return (
     <section className="py-20 bg-cosmic-surface/20">
@@ -19,27 +21,19 @@ export const VideoSection: React.FC = () => {
           
           <Card className="bg-cosmic-surface/80 border-cosmic-border backdrop-blur-sm hover:border-neon-purple/50 transition-all duration-300">
             <CardContent className="p-8">
-              {/* Placeholder for YouTube video */}
-              <div className="relative aspect-video bg-cosmic-bg rounded-xl border-2 border-dashed border-cosmic-border/50 flex items-center justify-center group hover:border-neon-purple/50 transition-all duration-300">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-neon-purple to-neon-blue rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-10 h-10 text-white ml-1" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    YouTube Video Placeholder
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Здесь будет видео с демонстрацией ScopeX
-                  </p>
-                </div>
-              </div>
-              
-              {/* Instructions for adding video */}
-              <div className="mt-6 p-4 bg-cosmic-bg/50 rounded-lg border border-cosmic-border/30">
-                <p className="text-sm text-muted-foreground text-center">
-                  <strong>Для добавления YouTube видео:</strong><br />
-                  Замените этот блок на iframe с вашим YouTube видео
-                </p>
+              {/* YouTube Video Embed */}
+              <div className="w-full aspect-video rounded-xl overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                  title="YouTube video player"
+                  loading="lazy"
+                />
               </div>
             </CardContent>
           </Card>

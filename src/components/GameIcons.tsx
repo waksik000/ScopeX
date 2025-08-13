@@ -22,12 +22,12 @@ const GameIcon: React.FC<GameIconProps> = ({ gameId, name, onClick, isActive }) 
         {/* Placeholder for game icon */}
         <div className="w-16 h-16 bg-gradient-to-br from-neon-purple/20 to-neon-blue/20 rounded-lg flex items-center justify-center">
           <span className="text-2xl font-bold text-neon-purple">
-            {gameId === 'cs2' && '🎯'}
-            {gameId === 'valorant' && '🔫'}
-            {gameId === 'fortnite' && '🏝️'}
-            {gameId === 'dota2' && '⚔️'}
-            {gameId === 'gta5' && '🚗'}
-            {gameId === 'roblox' && '🔷'}
+            {gameId === 'cs2' && <img src={`/images/${gameId}-icon.png`} alt={name} className="w-16 h-16 object-contain" />}
+            {gameId === 'valorant' && <img src={`/images/${gameId}-icon.png`} alt={name} className="w-16 h-16 object-contain" />}
+            {gameId === 'fortnite' && <img src={`/images/${gameId}-icon.png`} alt={name} className="w-16 h-16 object-contain" />}
+            {gameId === 'dota2' && <img src={`/images/${gameId}-icon.png`} alt={name} className="w-16 h-16 object-contain" />}
+            {gameId === 'gta5' && <img src={`/images/${gameId}-icon.png`} alt={name} className="w-16 h-16 object-contain" />}
+            {gameId === 'roblox' && <img src={`/images/${gameId}-icon.png`} alt={name} className="w-16 h-16 object-contain" />}
           </span>
         </div>
         
