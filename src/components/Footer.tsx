@@ -13,20 +13,9 @@ export const Footer: React.FC = () => {
     }
   };
 
-  const handleDownload = () => {
-    // Путь к файлу в папке public
-    const fileUrl = '/ScopeX.zip';
-    
-    // Создаем временную ссылку
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = 'ScopeX.zip';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    // Можно добавить аналитику (если нужно)
-    // window.gtag('event', 'download', {...});
+  // 🚀 Просто редиректим на Telegram-бота
+  const handleRedirectToBot = () => {
+    window.open('https://t.me/ScopeXX_bot', '_blank');
   };
 
   return (
@@ -80,7 +69,7 @@ export const Footer: React.FC = () => {
                 <div>{t('footer.version')}</div>
               </div>
               <Button 
-                onClick={handleDownload}
+                onClick={handleRedirectToBot}
                 className="w-full bg-gradient-to-r from-neon-purple to-neon-blue hover:from-neon-purple/80 hover:to-neon-blue/80 text-white border-0"
                 size="sm"
               >

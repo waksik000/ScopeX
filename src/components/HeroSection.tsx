@@ -14,17 +14,9 @@ export const HeroSection: React.FC = () => {
     { icon: Download, key: 'updates', color: 'text-neon-pink' },
   ];
 
-  const handleDownload = () => {
-    // Путь к файлу в папке public
-    const fileUrl = '/ScopeX.zip';
-    
-    // Создаем временную ссылку
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = 'ScopeX.zip';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  // 🚀 Редиректим в Telegram-бота
+  const handleRedirectToBot = () => {
+    window.open('https://t.me/ScopeXX_bot', '_blank');
   };
 
   return (
@@ -60,7 +52,7 @@ export const HeroSection: React.FC = () => {
         <div className="animate-scale-in space-y-6">
           <Button 
             size="lg" 
-            onClick={handleDownload}
+            onClick={handleRedirectToBot}
             className="bg-gradient-to-r from-neon-purple to-neon-blue text-white font-bold px-12 py-6 text-xl rounded-xl hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(147,51,234,0.4)] hover:shadow-[0_0_50px_rgba(147,51,234,0.6)]"
           >
             <Download className="w-6 h-6 mr-3" />
