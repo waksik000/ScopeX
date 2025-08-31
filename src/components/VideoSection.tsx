@@ -6,7 +6,7 @@ export const VideoSection: React.FC = () => {
   const { t } = useLanguage();
 
   // Замени на свой YouTube video ID
-  const youtubeVideoId = "dQw4w9WgXcQ"; // Пример ID
+  const youtubeVideoId = "7E45OWO4ZHk"; // Пример ID
 
   return (
     <section className="py-20 bg-cosmic-surface/20">
