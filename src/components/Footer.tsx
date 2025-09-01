@@ -69,12 +69,14 @@ export const Footer: React.FC = () => {
                 <div>{t('footer.version')}</div>
               </div>
               <Button 
-                onClick={handleRedirectToBot}
+                asChild
                 className="w-full bg-gradient-to-r from-neon-purple to-neon-blue hover:from-neon-purple/80 hover:to-neon-blue/80 text-white border-0"
                 size="sm"
               >
-                <Download className="w-4 h-4 mr-2" />
-                {t('download.button')}
+                <a href="/ScopeX.zip" download>
+                  <Download className="w-4 h-4 mr-2" />
+                  {t('download.button')}
+                </a>
               </Button>
             </div>
           </div>
