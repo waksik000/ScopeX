@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
 
   // 🚀 Просто редиректим на Telegram-бота
   const handleRedirectToBot = () => {
-    window.open('https://t.me/ScopeXX_bot', '_blank');
+    window.open('https://limewire.com/d/xLO5B#OEZFkrWe4F', '_blank');
   };
 
   return (
@@ -69,14 +69,12 @@ export const Footer: React.FC = () => {
                 <div>{t('footer.version')}</div>
               </div>
               <Button 
-                asChild
+                onClick={handleRedirectToBot}
                 className="w-full bg-gradient-to-r from-neon-purple to-neon-blue hover:from-neon-purple/80 hover:to-neon-blue/80 text-white border-0"
                 size="sm"
               >
-                <a href="/ScopeX.zip" download>
-                  <Download className="w-4 h-4 mr-2" />
-                  {t('download.button')}
-                </a>
+                <Download className="w-4 h-4 mr-2" />
+                {t('download.button')}
               </Button>
             </div>
           </div>
