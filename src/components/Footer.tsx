@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
 
   // 🚀 Просто редиректим на Telegram-бота
   const handleRedirectToBot = () => {
-    window.open('https://limewire.com/d/xLO5B#OEZFkrWe4F', '_blank');
+    window.open('https://limewire.com/d/FziPC#jx4L6iS8JI', '_blank');
   };
 
   return (
