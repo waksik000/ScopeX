@@ -16,7 +16,7 @@ export const HeroSection: React.FC = () => {
 
   // 🚀 Редиректим в Telegram-бота
   const handleRedirectToBot = () => {
-    window.open('https://limewire.com/d/FziPC#jx4L6iS8JI', '_blank');
+    window.open('https://limewire.com/d/WKI6J#qtJjR0LxiD', '_blank');
   };
 
   return (
