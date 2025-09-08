@@ -14,11 +14,6 @@ export const HeroSection: React.FC = () => {
     { icon: Download, key: 'updates', color: 'text-neon-pink' },
   ];
 
-  // 🚀 Редиректим в Telegram-бота
-  const handleRedirectToBot = () => {
-    window.open('https://limewire.com/d/WKI6J#qtJjR0LxiD', '_blank');
-  };
-
   return (
     <section className="pt-32 pb-20 min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-4 text-center">
@@ -33,12 +28,14 @@ export const HeroSection: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12 animate-scale-in">
           {features.map((Feature, index) => (
-            <div 
+            <div
               key={Feature.key}
               className="p-6 rounded-xl bg-cosmic-surface/50 border border-cosmic-border hover:border-neon-purple/50 transition-all duration-300 hover:scale-105 group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <Feature.icon className={`w-8 h-8 ${Feature.color} mb-4 mx-auto group-hover:animate-glow-pulse`} />
+              <Feature.icon
+                className={`w-8 h-8 ${Feature.color} mb-4 mx-auto group-hover:animate-glow-pulse`}
+              />
               <h3 className="font-semibold mb-2 text-foreground">
                 ✅ {t(`features.${Feature.key}`)}
               </h3>
@@ -50,15 +47,18 @@ export const HeroSection: React.FC = () => {
         </div>
 
         <div className="animate-scale-in space-y-6">
-          <Button 
-            size="lg" 
-            onClick={handleRedirectToBot}
+          {/* 🚀 Кнопка теперь качает Utility-ScopeX.zip напрямую */}
+          <Button
+            asChild
+            size="lg"
             className="bg-gradient-to-r from-neon-purple to-neon-blue text-white font-bold px-12 py-6 text-xl rounded-xl hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(147,51,234,0.4)] hover:shadow-[0_0_50px_rgba(147,51,234,0.6)]"
           >
-            <Download className="w-6 h-6 mr-3" />
-            {t('download.button')}
+            <a href="/Utility-ScopeX.zip" download>
+              <Download className="w-6 h-6 mr-3" />
+              {t('download.button')}
+            </a>
           </Button>
-          
+
           <div className="flex items-center justify-center space-x-2 text-muted-foreground">
             <Users className="w-5 h-5" />
             <span className="font-mono">{t('download.count')}</span>
