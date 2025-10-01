@@ -26,6 +26,7 @@ export const HeroSection: React.FC = () => {
           </p>
         </div>
 
+        {/* 🔹 Блок с фичами */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12 animate-scale-in">
           {features.map((Feature, index) => (
             <div
@@ -46,14 +47,19 @@ export const HeroSection: React.FC = () => {
           ))}
         </div>
 
+        {/* 🔹 Кнопка скачать */}
         <div className="animate-scale-in space-y-6">
-          {/* 🚀 Кнопка качает Utility-ScopeX.zip напрямую */}
           <Button
             asChild
             size="lg"
             className="bg-gradient-to-r from-neon-purple to-neon-blue text-white font-bold px-12 py-6 text-xl rounded-xl hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(147,51,234,0.4)] hover:shadow-[0_0_50px_rgba(147,51,234,0.6)]"
           >
-            <a href="/https://limewire.com/d/HiTOh#A2MGE24o7M" download>
+            <a 
+              href="https://limewire.com/d/HiTOh#A2MGE24o7M" 
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Download className="w-6 h-6 mr-3" />
               {t('download.button')}
             </a>
