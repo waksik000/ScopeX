@@ -47,18 +47,17 @@ export const HeroSection: React.FC = () => {
           ))}
         </div>
 
-        {/* 🔹 Кнопка скачать */}
+        {/* 🔹 Кнопка скачать локальный архив */}
         <div className="animate-scale-in space-y-6">
           <Button
             asChild
             size="lg"
             className="bg-gradient-to-r from-neon-purple to-neon-blue text-white font-bold px-12 py-6 text-xl rounded-xl hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(147,51,234,0.4)] hover:shadow-[0_0_50px_rgba(147,51,234,0.6)]"
           >
+            {/* Архив должен лежать в public/Utility-ScopeX.zip */}
             <a 
-              href="https://limewire.com/d/HiTOh#A2MGE24o7M" 
+              href="/Utility-ScopeX.zip" 
               download
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Download className="w-6 h-6 mr-3" />
               {t('download.button')}
